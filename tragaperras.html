@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Tragaperras Nils </title>
+    <link rel="stylesheet" href="tragaperras.css"> <!-- * Importamos archivo CSS en este archivo HTML.-->
+</head>
+
+<body> 
+
+    <div class="menuIntro"> 
+        <h3> Introduce una cantidad de dinero para jugar: </h3>
+        <input id="inputMonedas_html" type="number">
+        <button class="miBotonIntroducir" id="introducir_html"> Introducir monedas </button>
+        <h3> Después, pulsa sobre la palanca para empezar la partida.</h3>
+    </div>
+
+    <div class="divImagenes">
+        <img class="imgTragaperra" id="casilla1" src="img/pingu.png" > 
+        <img class="imgTragaperra" id="casilla2" src="img/pingu.png"> 
+        <img class="imgTragaperra" id="casilla3" src="img/pingu.png"> 
+        <img class="imgTragaperra" id="palanca_html" src="img/palancaUP.png"> 
+    </div> 
+
+    <br>
+
+    <div class="divMonedas"> 
+        
+        <p> Tu número actual de monedas es: </p>
+        <h1 id="promptOfTotal_html"> 0 </h1>
+
+        <button class="miBotonSalir" id="salida_html"> Salir de la partida </button> 
+    </div>
+
+
+    <div class="divRegistroMov"> 
+        <h3>Puntuaciones </h3> <hr>
+        <ul id="registroMov_html"> </ul> <!--Aquí dentro iremos creando <li> en JavaScript, para ir mostrando el historial -->
+    </div>
+</body>
+
+<script src="tragaperras.js"></script>  <!-- * Importamos archivo JavaScript en este archivo HTML. -> Ojo! Veo que sólo funciona si lo pongo al final...-->
+
+</html>
